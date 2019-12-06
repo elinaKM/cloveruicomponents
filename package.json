@@ -1,10 +1,10 @@
 {
-  "name": "cloveruipack",
-  "version": "1.0.0",
+  "name": "cloveruicomponents",
+  "version": "1.0.1",
   "description": "UI components library for dummy Clover brand that created as a part of the WEB programimg learning process",
   "author": "elinaKM",
   "license": "none",
-  "repository": "elinaKM/cloveruipack",
+  "repository": "elinaKM/cloveruicomponents",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
