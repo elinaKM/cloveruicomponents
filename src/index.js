@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import CloverBasicButton from './CloverBasicButton'
-import CloverToggleButton from './CloveToggleButton'
+import CloverLinkedButton from './CloverLinkedButton'
+import CloverToggleButton from './CloverToggleButton'
 
-export {CloverToggleButton, CloverBasicButton};
+export {CloverToggleButton, CloverLinkedButton};

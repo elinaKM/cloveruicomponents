@@ -5,7 +5,7 @@ import postcss from 'rollup-plugin-postcss'
 import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
 import svgr from '@svgr/rollup'
-
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import pkg from './package.json'
 
 export default {
@@ -34,6 +34,9 @@ export default {
       plugins: [ 'external-helpers' ]
     }),
     resolve(),
-    commonjs()
+    commonjs(),
+	peerDepsExternal({
+      includeDependencies: true,
+    })
   ]
 }

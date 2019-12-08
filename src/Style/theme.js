@@ -1,5 +1,3 @@
-import color from "color";
-
 const secondary = "#272121";
 const primary = "#196222";
 const bgText = "#f6e9e9";
@@ -13,9 +11,7 @@ export const theme = {
     primary,
     primaryText: bgText,
     secondary,
-    secondaryText: color(secondary)
-      .negate()
-      .string(),
+    secondaryText: secondary,
     inverse: bgText,
     inverseText: "#363333",
     positive,
