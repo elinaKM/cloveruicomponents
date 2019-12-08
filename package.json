@@ -1,6 +1,6 @@
 {
   "name": "cloveruicomponents",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "UI components library for dummy Clover brand that created as a part of the WEB programimg learning process",
   "author": "elinaKM",
   "license": "none",
@@ -57,5 +57,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-is": "^16.12.0",
+    "react-router-dom": "^5.1.2"
+  }
 }
