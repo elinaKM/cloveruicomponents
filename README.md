@@ -11,7 +11,7 @@ npm install --save cloveruicomponents
 ```
 ## Components
 ```javascript
-         ```
+
 * CloverToggleButton - Round button that used for toggle/play/roll actions in games or applications of "Clover" brand.
 	Properties:
 	* clickHandler - "onClick" action
