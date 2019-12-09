@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from "react";
 import { theme } from "./Style/theme";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const StyledLink = styled(Link)`
   & {
@@ -33,11 +33,9 @@ const StyledLink = styled(Link)`
 
 function CloverLinkedButton({ size, to, children, useTheme }) {
   return(
-      <BrowserRouter>
         <StyledLink buttonSize={size} to={to} themeProp={useTheme ? useTheme : theme}>
             {children}
         </StyledLink>      
-      </BrowserRouter>
   )
 }
 
