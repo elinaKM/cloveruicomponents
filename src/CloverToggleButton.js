@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import React from "react";
-import {theme} from "./Style/theme"
+import {theme as defaultTheme} from "./Style/theme"
 
 const StyledButton = styled.button`
     & {
@@ -15,9 +15,9 @@ const StyledButton = styled.button`
     border-radius: 100%;
     border: none;
     font-weight: bold;
-    background-color: ${props => props.themeProp.palette.primary};
-    color: ${props => props.themeProp.palette.primaryText};
-    box-shadow: 1px 1px 10px ${props => props.themeProp.palette.secondary};
+    background-color: ${props => props.theme.palette.primary};
+    color: ${props => props.theme.palette.primaryText};
+    box-shadow: 1px 1px 10px ${props => props.theme.palette.secondary};
   }
   &:focus {
     outline: none;
@@ -44,11 +44,11 @@ const StyledButton = styled.button`
   }
 `;
 
-function CloverToggleButton({clickHandler, sizeOfFont, children, useTheme}){
-  return(
-      <StyledButton onClick={clickHandler} fontSize={sizeOfFont} themeProp={useTheme ? useTheme : theme}>
-        {children}
-      </StyledButton>
+function CloverToggleButton({ onClick, fontSize, children, theme }) {
+  return (
+    <StyledButton onClick={onClick} fontSize={fontSize} theme={theme ? theme : defaultTheme}>
+      {children}
+    </StyledButton>
   )
 }
 

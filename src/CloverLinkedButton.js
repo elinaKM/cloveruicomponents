@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import React from "react";
-import { theme } from "./Style/theme";
+import { theme as defaultTheme} from "./Style/theme";
 import { Link } from "react-router-dom";
 
 const StyledLink = styled(Link)`
@@ -11,11 +11,11 @@ const StyledLink = styled(Link)`
     font-size: ${props => props.buttonSize === "normal" ? "2em" : (props.buttonSize === "large" ? "6em" : "2em")};
     font-weight: bold;
     align-self: ${props => props.buttonSize === "normal" ? "stretch" : (props.buttonSize === "large" ? "none" : "stretch")};
-    background-color: ${props => props.themeProp.palette.primary};
-    color: ${props => props.themeProp.palette.primaryText};
+    background-color: ${props => props.theme.palette.primary};
+    color: ${props => props.theme.palette.primaryText};
     text-decoration: none;
     text-align: center;
-    box-shadow: 1px 1px 10px ${props => props.themeProp.palette.secondary};
+    box-shadow: 1px 1px 10px ${props => props.theme.palette.secondary};
   }
   &:focus {
     outline: none;
@@ -32,11 +32,11 @@ const StyledLink = styled(Link)`
   }
 `;
 
-function CloverLinkedButton({ size, to, children, useTheme }) {
-  return(
-        <StyledLink buttonSize={size} to={to} themeProp={useTheme ? useTheme : theme}>
-            {children}
-        </StyledLink>      
+function CloverLinkedButton({ size, to, children, theme }) {
+  return (
+    <StyledLink buttonSize={size} to={to} theme={theme ? theme : defaultTheme}>
+      {children}
+    </StyledLink>
   )
 }
 
