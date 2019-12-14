@@ -19,7 +19,7 @@ npm install --save cloveruicomponents
 
 * CloverLinkedButton - Basic button (based on styled(Link)) usually used to move to the game or all other action.
 	Properties:
-	* buttonSize - posible values: "normal"/"large" (default value: "normal" if not provided)
+	* size - posible values: "normal"/"large" (default value: "normal" if not provided)
 	* to - link to new location
 	* theme - object that is used for collors and decoration of the button 
 		(if not been provided, internal default theme is being used)  

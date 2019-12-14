@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const StyledLink = styled(Link)`
   & {
     display: block;
-    padding: ${props => props.buttonSize === "normal" ? "20px" : (props.buttonSize === "large" ? "50px" : "20px")};
+    padding: ${props => props.size === "normal" ? "20px" : (props.size === "large" ? "50px" : "20px")};
     border-radius: 10px;
-    font-size: ${props => props.buttonSize === "normal" ? "2em" : (props.buttonSize === "large" ? "6em" : "2em")};
+    font-size: ${props => props.size === "normal" ? "2em" : (props.size === "large" ? "6em" : "2em")};
     font-weight: bold;
-    align-self: ${props => props.buttonSize === "normal" ? "stretch" : (props.buttonSize === "large" ? "none" : "stretch")};
+    align-self: ${props => props.size === "normal" ? "stretch" : (props.size === "large" ? "none" : "stretch")};
     background-color: ${props => props.theme.palette.primary};
     color: ${props => props.theme.palette.primaryText};
     text-decoration: none;
@@ -34,7 +34,7 @@ const StyledLink = styled(Link)`
 
 function CloverLinkedButton({ size, to, children, theme }) {
   return (
-    <StyledLink buttonSize={size} to={to} theme={theme ? theme : defaultTheme}>
+    <StyledLink size={size} to={to} theme={theme ? theme : defaultTheme}>
       {children}
     </StyledLink>
   )
