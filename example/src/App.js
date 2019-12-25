@@ -8,6 +8,6 @@ export default class App extends Component {
       <div>
         <CloverToggleButton sizeOfFont="40px">play</CloverToggleButton>
       </div>
-    )
+    );
   }
 }

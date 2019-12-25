@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from "react";
 import { theme as defaultTheme} from "./Style/theme";
-import { Link } from "react-router-dom";
+import { Link } from "@reach/router";
 
 const StyledLink = styled(Link)`
   & {
