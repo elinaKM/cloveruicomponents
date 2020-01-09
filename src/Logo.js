@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from "react";
 import {theme as defaultTheme} from "./Style/theme";
 
-const StyledLogo = styled.h1`
+const StyledLogo = styled.span`
   font-size: 2em;
   color: ${props => props.theme.palette.primaryText};
   text-decoration: none;

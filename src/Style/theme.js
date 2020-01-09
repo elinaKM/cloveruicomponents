@@ -24,5 +24,9 @@ export const theme = {
     sans-serif`,
     code: `source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace`
+  },
+  id: {
+    name: "CLOVER",
+    logo: "🍀"
   }
 };
