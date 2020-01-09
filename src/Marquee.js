@@ -22,7 +22,7 @@ const StyledText = styled.h1`
     }
 `;
 
-function CloverMarquee({color, fontSize, children}){
+function Marquee({color, fontSize, children}){
     return(
         <StyledDiv height={fontSize}>
             <StyledText color={color} fontSize={fontSize}>{children}</StyledText>
@@ -30,4 +30,4 @@ function CloverMarquee({color, fontSize, children}){
     );
 }
 
-export default CloverMarquee;
+export default Marquee;

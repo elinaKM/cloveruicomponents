@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import React from "react";
 import {theme as defaultTheme} from "./Style/theme"
 
+
 const StyledButton = styled.button`
     & {
     font-size: ${props => props.fontSize};
@@ -44,7 +45,7 @@ const StyledButton = styled.button`
   }
 `;
 
-function CloverToggleButton({ onClick, fontSize, children, theme }) {
+function ToggleButton({ onClick, fontSize, children, theme }) {
   return (
     <StyledButton onClick={onClick} fontSize={fontSize} theme={theme ? theme : defaultTheme}>
       {children}
@@ -52,4 +53,4 @@ function CloverToggleButton({ onClick, fontSize, children, theme }) {
   )
 }
 
-export default CloverToggleButton;
+export default ToggleButton;
