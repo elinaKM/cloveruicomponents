@@ -18,8 +18,8 @@ const loading = keyframes`
 
 const LoadingBar = styled.div`
   display: inline-block;
-  height: "18px";
-  width: "4px";
+  width: 4px;
+  height: 18px;
   border-radius: 4px;
   background-color: ${props => props.theme.palette.primary};
   margin: 0 5px;
@@ -41,15 +41,11 @@ const LoadingBar = styled.div`
 
 function Loading({theme}) {
   let bars = Array.from(Array(DEFAULT_NUMBER_OF_BARS).keys());
-  bars = bars.map((i) => 
-    <LoadingBar 
-      key={i}
-      theme={theme ? theme : defaultTheme}/>
-  );
+  bars = bars.map((i) => <LoadingBar theme={theme ? theme : defaultTheme}/>);
   return (
-    <div>
-      {bars}
-    </div>
+    <di>
+       {bars}
+    </di>
   );
 }
 
