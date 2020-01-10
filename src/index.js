@@ -4,6 +4,7 @@ import Marquee from './Marquee'
 import Logo from './Logo'
 import Loading from './Loading'
 import GameIcon from './GameIcon'
+import LabeledTextField from './LabeledTextField'
 
 export {
     BasicButton, 
@@ -11,5 +12,6 @@ export {
     Marquee,
     Logo,
     Loading,
-    GameIcon
+    GameIcon,
+    LabeledTextField
 };

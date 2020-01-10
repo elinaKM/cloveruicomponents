@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import React from "react";
-import {theme as defaultTheme} from "./Style/theme"
+import React from 'react'
+import styled from 'styled-components'
+import {theme as defaultTheme} from './Style/theme'
 
 const StyledButton = styled.button`
   padding: ${props => props.size === "normal" ? "20px" : (props.size === "large" ? "50px" : "20px")};

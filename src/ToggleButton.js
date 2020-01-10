@@ -1,7 +1,6 @@
+import React from 'react'
 import styled from 'styled-components'
-import React from "react";
-import {theme as defaultTheme} from "./Style/theme"
-
+import {theme as defaultTheme} from './Style/theme'
 
 const StyledButton = styled.button`
     & {

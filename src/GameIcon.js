@@ -1,6 +1,6 @@
+import React from 'react'
 import styled from 'styled-components'
-import React from "react";
-import {theme as defaultTheme} from "./Style/theme"
+import {theme as defaultTheme} from './Style/theme'
 
 const StyledGameIcon = styled.img`
     width: ${props => props.size === "small" ? "100px" : props.size === "normal" ? "200px" : "200px"};

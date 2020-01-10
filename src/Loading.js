@@ -1,6 +1,6 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import {theme as defaultTheme} from "./Style/theme"
+import React from 'react'
+import styled from 'styled-components'
+import {theme as defaultTheme} from './Style/theme'
 
 const DEFAULT_NUMBER_OF_BARS = 4;
 
@@ -21,7 +21,7 @@ const LoadingBar = styled.div`
   height: "18px";
   width: "4px";
   border-radius: 4px;
-  background-color: ${props => props.color ? props.color : props => props.theme.palette.primary};
+  background-color: ${props => props.theme.palette.primary};
   margin: 0 5px;
   animation: ${loading} 1s ease-in-out infinite;
 
@@ -39,16 +39,13 @@ const LoadingBar = styled.div`
   }
 `;
 
-function Loading({color, theme}) {
-
+function Loading({theme}) {
   let bars = Array.from(Array(DEFAULT_NUMBER_OF_BARS).keys());
   bars = bars.map((i) => 
     <LoadingBar 
       key={i}
-      color={color}
-      theme={theme ? theme : defaultTheme}>
-    </LoadingBar>
-);
+      theme={theme ? theme : defaultTheme}/>
+  );
   return (
     <div>
       {bars}
