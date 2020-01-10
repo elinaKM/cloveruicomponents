@@ -4,7 +4,7 @@ import {theme as defaultTheme} from './Style/theme'
 
 const StyledLogo = styled.span`
   font-size: 2em;
-  color: ${props => props.useTheme.palette.primaryText};
+  color: ${props => props.theme.palette.primaryText};
   text-decoration: none;
 `;
 
