@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import {theme as defaultTheme} from './Style/theme'
 
 const DEFAULT_NUMBER_OF_BARS = 4;
