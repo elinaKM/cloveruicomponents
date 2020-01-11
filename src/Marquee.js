@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {theme as defaultTheme} from './Style/theme'
 
 const StyledDiv = styled.div`
     height: ${props => props.height}; 
@@ -9,7 +10,7 @@ const StyledDiv = styled.div`
 `;
 
 const StyledText = styled.h1`
-    color: ${props => props.color};
+    color: ${props => props.theme.palette.primary};
     font-size: ${props => props.fontSize};
 
     margin: 0;
@@ -22,10 +23,10 @@ const StyledText = styled.h1`
     }
 `;
 
-function Marquee({color, fontSize, children}){
+function Marquee({theme, fontSize, children}){
     return(
         <StyledDiv height={fontSize}>
-            <StyledText color={color} fontSize={fontSize}>{children}</StyledText>
+            <StyledText theme={theme ? theme : defaultTheme} fontSize={fontSize}>{children}</StyledText>
         </StyledDiv>
     );
 }

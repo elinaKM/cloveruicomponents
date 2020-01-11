@@ -11,18 +11,35 @@ npm install --save cloveruicomponents
 ```
 ## Components
 
-* CloverToggleButton - Round button that used for toggle/play/roll actions in games or applications of "Clover" brand.
+* ToggleButton
 	Properties:
-	* onClick
-	* fontSize
-	* theme - object that is used for collors and decoration of the button (if not been provided, internal default theme is being used) 
+	onClick, fontSize, children, theme
 
-* CloverLinkedButton - Basic button (based on styled(Link)) usually used to move to the game or all other action.
+* BasicButton
 	Properties:
-	* size - posible values: "normal"/"large" (default value: "normal" if not provided)
-	* to - link to new location
-	* theme - object that is used for collors and decoration of the button 
-		(if not been provided, internal default theme is being used)  
+	size - normal/large,
+	onClick, children, theme
+	
+* GameIcon
+	Properties:
+	size - normal/small,
+	blendMode, position, src, alt, theme
+	
+* LabeledTextField
+	Properties:
+	label, type, id, placeholder, value, onChange, fontSize, theme
+
+* Logo
+	Properties:
+	text, icon, iconAriaLabel, fontSize, spaceSize, theme
+
+* Loading
+	Properties:
+	theme
+
+* Marquee
+	Properties:
+	theme, fontSize, children
 
 ## Usage
 
