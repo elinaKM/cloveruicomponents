@@ -2,17 +2,31 @@ import React from 'react'
 import styled from 'styled-components'
 import {theme as defaultTheme} from './Style/theme'
 
-const StyledLogo = styled.span`
-  font-size: 2em;
-  color: ${props => props.theme.palette.primaryText};
-  text-decoration: none;
-`;
-
-function Logo({theme}){
-    const useTheme = (theme ? theme : defaultTheme);
+function Logo( {text, icon, iconAriaLabel, fontSize, spaceSize, theme}){
     return (
-        <StyledLogo theme={useTheme}>{`${useTheme.id.logo} ${useTheme.id.name}`}</StyledLogo>
+        <StyledDiv fontSize={fontSize}
+                   theme={theme ? theme : defaultTheme}>
+          <StyledSpan
+            role="img"
+            aria-label={iconAriaLabel}
+            spaceSize={spaceSize}
+          >
+            {icon}
+          </StyledSpan>
+          <span>{text}</span>
+        </StyledDiv>
     );
 }
+
+const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
+  color: ${props => props.theme.palette.primaryText};
+  font-size: ${props => props.fontSize};
+`;
+
+const StyledSpan = styled.span`
+  margin-right: ${props => props.spaceSize};
+`;
 
 export default Logo;
