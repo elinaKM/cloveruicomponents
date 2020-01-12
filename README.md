@@ -41,6 +41,9 @@ npm install --save cloveruicomponents
 	Properties:
 	theme, fontSize, children
 
+## Storybook
+To watch the components in action, [visit our Storybook](https://elinakm.github.io/cloveruicomponents/?path=/story/welcome--to-storybook)
+
 ## Usage
 
 ```jsx
