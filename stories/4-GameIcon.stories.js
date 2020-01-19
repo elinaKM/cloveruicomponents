@@ -1,10 +1,9 @@
 import React from 'react';
 import GameIcon from '../src/GameIcon';
 import {theme as defaultTheme} from '../src/Style/theme';
-import slotMachineImg from '../src/images/slot-machine.jpg'
-import bigSlotMachineImg from '../src/images/big-slot-machine.jpg'
+import slotMachineImg from '../src/images/slot-machine.webp'
 import peachImg from '../src/images/peach.jpg'
-import frozenImg from '../src/images/frozen.webp'
+import frozenImg from '../src/images/freez.webp'
 import PeachTheme from '../src/Style/PeachTheme';
 import FreezTheme from '../src/Style/FreezTheme';
 
@@ -18,7 +17,7 @@ export const CloverSlotMachineSmallIcon = () =>
 ;
 
 export const CloverSlotMachineNormalIcon = () =>
-  <GameIcon src={bigSlotMachineImg} alt="big slot machine image" theme={defaultTheme}/>
+  <GameIcon src={slotMachineImg} alt="big slot machine image" theme={defaultTheme}/>
 ;
 
 export const PeachSmallIcon = () =>
